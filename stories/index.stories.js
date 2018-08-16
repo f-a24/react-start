@@ -6,6 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
+import App from '../src/App';
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -17,3 +19,7 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+
+storiesOf('App', module).add('App', () => <App name="Welcome to React" color="skyblue" />);
+

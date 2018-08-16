@@ -11,7 +11,7 @@
 ```
 react-start
 ├─ .storybook              // storybook configuration files
-├─ flow-typed              // Flow型定義ファイル群
+├─ flow-typed              // Flow type definition files
 ├─ public
 |  └─ index.html           // Entry file
 ├─ src
