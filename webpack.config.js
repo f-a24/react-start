@@ -1,6 +1,6 @@
 module.exports = {
   mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
-  entry: ['babel-polyfill', `${__dirname}/src/index.jsx`],
+  entry: `${__dirname}/src/index.jsx`,
   output: {
     path: `${__dirname}/public`,
     filename: 'index.js'
@@ -13,8 +13,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: [['env', {'modules': false}], 'react', 'flow'],
-              plugins: ['transform-flow-strip-types']
+              presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-flow']
             }
           }
         ],
